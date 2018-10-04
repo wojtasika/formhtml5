@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-   <form action="form.php" method="post">
-       <label for="imie">Imię:</label><br/>
-       <input type="text" name="imię" id="imie"><br/>
-       <label for="nazwisko">Nazwisko:</label><br/>
-       <input type="text" name="nazwisko" id="nazwisko"><br/>
-       <label for="email">Email:</label><br/>
-       <input type="text" name="email" id="email"><br/>
-       <label for="phone">Phone:</label><br/>
-       <input type="text" name="phone" id="phone"><br/>
-       <label for="city">City:</label><br/>
-       <select name="city" id="city">
-           <option value="Krakow">Krakow</option>
-           <option value="Warszawa">Warszawa</option>
-           <option value="Gdansk">Gdansk</option>
-       </select><br/>
-       <input type="radio" name="gender">Mężczyzna
-       <input type="radio" name="gender">Kobieta<br/>
-       <p>Wyrażam zgodę na przetwarzanie danych osobowych....</p>
-       <input type="checkbox" name="agreement"><br/>
-       <textarea maxlength="255"></textarea><br/>
-   </form>
-    
+    <form action="https://formspree.io/agawojtasik25@wp.pl" method="POST">
+        <label for="imie">Imię:</label><br />
+        <input type="text" name="imię" id="imie"><br />
+        <label for="nazwisko">Nazwisko:</label><br />
+        <input type="text" name="nazwisko" id="nazwisko"><br />
+        <label for="email">Email:</label><br />
+        <input type="text" name="email" id="email"><br />
+        <label for="phone">Phone:</label><br />
+        <input type="text" name="phone" id="phone"><br />
+        <label for="city">Wybierz miasto:</label><br />
+        <select name="city" id="city">
+            <option value="Krakow">Krakow</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdansk">Gdansk</option>
+        </select><br />
+        <label for="gender">Wybierz płeć:</label><br />
+        <input type="radio" name="gender">Mężczyzna
+        <input type="radio" name="gender">Kobieta<br />
+        <textarea maxlength="255"></textarea><br />
+        <input type="checkbox" name="agreement"><br />
+        <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label><br />
+        <input type="submit" value="send">
+    </form>
+
 </body>
+
 </html>
